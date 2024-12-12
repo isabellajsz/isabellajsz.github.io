@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Isabella Jakobsen Szállás</title>
+</head>
+<imgsrc="C:\Users\Isabella\Downloads\snappysnaps-charlottest_tc-6249_2022-11-18_1053\myphoto">
+<p>about</p>
+<p>publications</p># Auto detect text files and perform LF normalization
+* text=auto
