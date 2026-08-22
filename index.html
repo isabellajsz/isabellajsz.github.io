@@ -7,8 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 	<style>
         /* General Styles */
-        body {
+        html, body {
+            height: 100%;
             margin: 0;
+        }
+
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
             font-family: 'Alice', serif;
             background-color: #ffffff;
             color: #000000;
@@ -17,7 +25,11 @@
         header {
             position: relative;
             height: 200px;
-            background: url("images/header.jpg") no-repeat center/cover;
+            background: url("images/header.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center 85%; 
+
         }
 
         header .overlay {
@@ -26,17 +38,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        header img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            margin-bottom: 10px;
         }
 
         header h1 {
@@ -46,13 +50,13 @@
         }
 
         nav {
-            background-color: #000000;
+            background-color: #ffffff;
             padding: 10px;
             text-align: center;
         }
 
         nav a {
-            color: #ffffff;
+            color: #000000;
             text-decoration: none;
             margin: 0 15px;
             font-size: 1em;
@@ -63,7 +67,23 @@
         }
 
         .container {
+            flex: 1 0 auto;
             padding: 20px;
+        }
+
+        .img_deg {
+            border: 2px solid #000000;
+            float: right;
+            width: 30%;
+            margin: 0 0 15px 20px;
+
+        }
+
+        .pos_cen {
+            width: 70%;
+            margin: 0 auto;
+            overflow: auto;
+            padding-bottom: 40px;
         }
 
         .social-links a {
@@ -78,35 +98,58 @@
         }
 
         footer {
+            flex-shrink: 0,
             text-align: center;
             padding: 10px;
             background-color: #f0f0f0;
         }
     </style>
 </head>
+
 <body>
+    <!-- Header -->
+    <header>
+        <div class="overlay">
+            <h1>isabella jakobsen szállás</h1>
+        </div>
+    </header>
+
+    <!-- Nav -->
+    <nav>
+        <a href="#about">about</a>
+        <a href="#translation publications">publications</a>
+        <a href="#contact">contact</a>
+    </nav>
+
     <!-- Main Content -->
     <div class="container">
-        <h1>isabella jakobsen szállás</h1>
-        <p> hungarian to english translation / fordítás magyarról angolra</p>
-        <h2>about.</h2>
-	<p>	Isabella Jakobsen Szállás is a literary translator of prose, poetry and plays. Her translations have appeared in <a href="https://hlo.hu/new-work/panni-puskas-self-pity-in-the-backwaters-of-szigetkoz.html" target="_blank">Hungarian Literature Online</a> (2025). She studied classical languages and literature at UCL, with a Dean's List awarded dissertation about Miklós Radnóti’s translations from Latin. She took part in Bristol Translates Summer School in 2023, and in an online Hungarian Literary Translation course in 2024. Isabella is currently studying on the Hungarian Literary Translation programme at the Balassi Institute in Budapest, where she is being mentored by translator Anna Bentley. She is currently working on a collection of poems by István Kormos (seeking a publisher). </p>
+        <div class="pos_cen">
+            <img class="img_deg" src="images/me.jpg" />
+            <h2>about.</h2>
+	    <p>	Isabella Jakobsen Szállás is a writer and literary translator. Her translations have appeared in <i>Hungarian Literature Online</i> and have been shortlisted for appearance in <i>Asymptote</i>.  Isabella studied on the Hungarian Literary Translation postgraduate programme at the Balassi Institute in Budapest, where she is being mentored by translator Anna Bentley. She studied classical languages and literature at UCL, with a Dean's List awarded dissertation about Miklós Radnóti’s translations from Latin. She has translated works by István Kormos, Péter Kántor, Péter Hajnóczy, Panni Puskás, Balázs Mohácsi, and Péter Görcsi. </p>
+           <h2>translation publications.</h2>
+           <ul>
+               <li> Panni Puskás: <i>Self-Pity in the Backwaters of Szigetköz. </i> <a href="https://hlo.hu/new-work/panni-puskas-self-pity-in-the-backwaters-of-szigetkoz.html" target="_blank">Hungarian Literature Online</a> (2025) </li>
+               <li> István Kormos: <i>Red Dolphins Drag Me</i> and <i>Crosses on Their Hairy Backs</i>. Hungarian Literature Online (forthcoming) </li>
+               <li> István Kormos: <i>Poor Yorick</i> and <i>October</i>. Hungarian Literature Online (forthcoming) </li>
+           </ul>
+           <p>  </p>
+       
 
     <!-- Social Links -->
-    <h2>contact.</h2>
-        <div class="social-links">
-            <a href="mailto:isa.h.jakobsen@gmail.com">email</a>
-            <a href="https://linkedin.com/in/isabella-jakobsen-szallas/" target="_blank">linkedin</a>
-            <a href="https://instagram.com/isabellajkbsn/" target="_blank">instagram</a>
-        </div>
-    </br>
-            <img src="images/me.jpg">
+            <h2>contact.</h2>
+                <div class="social-links">
+                    <a href="mailto:isa.h.jakobsen@gmail.com">email</a>
+                    <a href="https://substack.com/@isabellajakobsenszlls" target="_blank">substack</a>
+                    <a href="https://bsky.app/profile/isabellajsz.bsky.social" target="_blank">bluesky</a>
+                    <a href="https://instagram.com/isabellajkbsn/" target="_blank">instagram</a>
+                </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer>
-        &copy; 2024 Isabella Jakobsen Szállás. All rights reserved.
+    <footer class="footer">
+        &copy; 2026 Isabella Jakobsen Szállás. All rights reserved.
     </footer>
 </body>
 </html>
