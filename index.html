@@ -25,13 +25,12 @@
         header {
             position: relative;
             height: 200px;
+            overflow: hidden;
             background: url("images/header.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center 85%; 
-    background-color: red !important;
-    border: 8px solid lime !important;
-    height: 200px !important;
+
         }
 
         header .overlay {
@@ -43,11 +42,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+
         }
 
         header h1 {
             color: #ffffff;
-            font-size: 2.5em;
+            font-size:  clamp(1.3em, 6vw, 2.5em);
+            text-align: center;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
             margin: 0;
         }
 
