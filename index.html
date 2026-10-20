@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="color-scheme" content="light only">
 	<title>Isabella Jakobsen Szállás</title>
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 	<style>
@@ -10,8 +11,8 @@
         html, body {
             height: 100%;
             margin: 0;
+            color-scheme: light only;
         }
-
 
         body {
             display: flex;
@@ -29,8 +30,7 @@
             background: url("images/header.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center 85%; 
-
+            background-position: center 85%;
         }
 
         header .overlay {
@@ -44,16 +44,21 @@
             justify-content: center;
             padding: 0 20px;
             box-sizing: border-box;
-
         }
 
         header h1 {
             color: #ffffff;
-            font-size:  clamp(1.3em, 6vw, 2.5em);
+            font-size: clamp(1.3em, 6vw, 2.5em);
             text-align: center;
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
             margin: 0;
         }
+
+	header h1 a {
+	    color: inherit;
+	    text-decoration: none; 
+	    hover { opacity: 0.8; };
+}
 
         nav {
             background-color: #ffffff;
@@ -82,7 +87,6 @@
             float: right;
             width: 30%;
             margin: 0 0 15px 20px;
-
         }
 
         .pos_cen {
@@ -91,6 +95,10 @@
             overflow: auto;
             padding-bottom: 40px;
         }
+
+	.favicon {
+	    <link rel="icon" href="images/favicon.png" type="image/png">
+	}
 
         .social-links a {
             margin: 0 10px;
@@ -113,43 +121,38 @@
 </head>
 
 <body>
+
     <!-- Header -->
-    <header>
-        <div class="overlay">
-            <h1>isabella jakobsen szállás</h1>
-        </div>
-    </header>
+<header>
+    <div class="overlay">
+        <h1><a href="index.html">isabella jakobsen szállás</a></h1>
+    </div>
+</header>
+
 
     <!-- Nav -->
     <nav>
-        <a href="#about">about</a>
-        <a href="#translation publications">publications</a>
-        <a href="#contact">contact</a>
+        <a href="about.html">about</a>
+        <a href="publications.html">publications</a>
+        <a href="contact.html">contact</a>
     </nav>
 
     <!-- Main Content -->
     <div class="container">
         <div class="pos_cen">
             <img class="img_deg" src="images/me.jpg" />
-            <h2>about.</h2>
-	    <p>	Isabella Jakobsen Szállás is a writer and literary translator. Her translations have appeared in <i>Hungarian Literature Online</i> and have been shortlisted for appearance in <i>Asymptote</i>.  Isabella studied on the Hungarian Literary Translation postgraduate programme at the Balassi Institute in Budapest, where she is being mentored by translator Anna Bentley. She studied classical languages and literature at UCL, with a Dean's List awarded dissertation about Miklós Radnóti’s translations from Latin. She has translated works by István Kormos, Péter Kántor, Péter Hajnóczy, Panni Puskás, Balázs Mohácsi, and Péter Görcsi. </p>
-           <h2>translation publications.</h2>
-           <ul>
-               <li> Panni Puskás: <i>Self-Pity in the Backwaters of Szigetköz. </i> <a href="https://hlo.hu/new-work/panni-puskas-self-pity-in-the-backwaters-of-szigetkoz.html" target="_blank">Hungarian Literature Online</a> (2025) </li>
-               <li> István Kormos: <i>Red Dolphins Drag Me</i> and <i>Crosses on Their Hairy Backs</i>. Hungarian Literature Online (forthcoming) </li>
-               <li> István Kormos: <i>Poor Yorick</i> and <i>October</i>. Hungarian Literature Online (forthcoming) </li>
-           </ul>
-           <p>  </p>
-       
+            <p> Isabella Jakobsen Szállás is a writer and literary translator. Her translations have appeared in <i>Hungarian Literature Online</i> and have been shortlisted for appearance in <i>Asymptote</i>. Isabella studied on the Hungarian Literary Translation postgraduate programme at the Balassi Institute in Budapest, where she was mentored by translator Anna Bentley. She's currently based in Budapest. </p>
 
-    <!-- Social Links -->
+            <p> </p>
+
+            <!-- Social Links -->
             <h2>contact.</h2>
-                <div class="social-links">
-                    <a href="mailto:isa.h.jakobsen@gmail.com">email</a>
-                    <a href="https://substack.com/@isabellajakobsenszlls" target="_blank">substack</a>
-                    <a href="https://bsky.app/profile/isabellajsz.bsky.social" target="_blank">bluesky</a>
-                    <a href="https://instagram.com/isabellajkbsn/" target="_blank">instagram</a>
-                </div>
+            <div class="social-links">
+                <a href="mailto:isa.h.jakobsen@gmail.com">email</a>
+                <a href="https://substack.com/@isabellajsz" target="_blank">substack</a>
+                <a href="https://bsky.app/profile/isabellajsz.bsky.social" target="_blank">bluesky</a>
+                <a href="https://instagram.com/isabellajkbsn/" target="_blank">instagram</a>
+            </div>
         </div>
     </div>
 

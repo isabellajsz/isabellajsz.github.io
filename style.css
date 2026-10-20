@@ -1,0 +1,105 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Alice', serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    position: relative;
+    height: 200px;
+    background-image: url("images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; /* try: center center, center bottom, left center, right 30%, etc */
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header h1 a {
+	    color: inherit;
+	    text-decoration: none; 
+	    hover { opacity: 0.8; };
+}
+
+
+nav {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+.container {
+    flex: 1 0 auto;
+    padding: 20px;
+}
+
+.img_deg {
+    float: right;
+    width: 30%;
+    margin: 0 0 15px 20px;
+}
+
+.pos_cen {
+    width: 70%;
+    margin: 0 auto;
+    overflow: auto;
+    padding-bottom: 40px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
