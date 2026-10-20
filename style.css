@@ -13,13 +13,15 @@ body {
     color: #000000;
 }
 
+
+
 header {
     position: relative;
     height: 200px;
     background-image: url("images/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top; /* try: center center, center bottom, left center, right 30%, etc */
+    background-position: center 85%; 
 }
 
 header .overlay {
@@ -28,7 +30,6 @@ header .overlay {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,6 +38,7 @@ header .overlay {
 header h1 {
     color: #ffffff;
     font-size: 2.5em;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     margin: 0;
 }
 
@@ -48,13 +50,13 @@ header h1 a {
 
 
 nav {
-    background-color: #000000;
+    background-color: #ffffff;
     padding: 10px;
     text-align: center;
 }
 
 nav a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     margin: 0 15px;
     font-size: 1em;
